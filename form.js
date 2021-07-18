@@ -66,7 +66,7 @@ function Form({textInput,setTextInput,todosList,setTodosList,optionView,setOptio
                 <form method="Post" onSubmit={todoFormSubmit}>    
                     <div className="form-input-btn-display">
                         <div className="settings">
-                            <button type="button" onClick={()=>setIsModalOpen(true)} className="fas fa-cog"></button>
+                            <button type="button" onClick={()=>setIsModalOpen(true)} style={{cursor:"pointer"}} className="fas fa-cog"></button>
                         </div>
                         <div className="custom-select-opt"> 
                             <select value={optionView} onChange={viewOptionHandler}>
